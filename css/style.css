@@ -1,69 +1,62 @@
-:root{
-    --primary-color: #FEDC00;
-    --icon-color: #252525;
+:root {
+  --primary-color: #fedc00;
+  --icon-color: #323232;
 }
 
-html{
-    scroll-behavior: smooth;
+html {
+  scroll-behavior: smooth;
 }
 
-body{
-    display: grid;
-    grid-template-areas: "content";
-    font-family: 'Ubuntu', sans-serif;
-    color: #fff;
-    background-color: #000;
+body {
+  display: grid;
+  grid-template-areas: "content";
+  font-family: "Ubuntu", sans-serif;
+  color: #fff;
+  background-color: #000;
 }
 
-header{
-    grid-area: content;
-    margin-top: 48px;
-    width: 100%;
-    max-width: 1200px;
-    place-self: start center;
-    z-index: 999;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
+header {
+  grid-area: content;
+  margin-top: 48px;
+  width: 100%;
+  max-width: 1200px;
+  place-self: start center;
+  z-index: 999;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
 }
 
-
-main{
-    grid-area: content;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
+main {
+  grid-area: content;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }
 
-section{
-    height: 100vh;
+section {
+  height: 100vh;
 }
 
-.projetos{
-    background-color: lightgreen;
-    width: 100%;
-}
-.contato{
-    background-color: plum;
-    width: 100%;
-}
-
-#link-topo{
-    text-decoration: none;
-    color: #fff;
-    font-size: 26px;
-    background-color:#323232;
-    padding: 10px;
-    position: fixed;
-    right: 10px;
-    bottom: 10px;
-    box-shadow: 3px 3px 10px #333;
+#link-topo {
+  text-decoration: none;
+  color: #fff;
+  font-size: 26px;
+  background-color: #323232;
+  padding: 10px;
+  position: fixed;
+  right: 50px;
+  bottom: 54px;
+  display: grid;
+  box-shadow: 3px 3px 10px #333;
+  user-select: none;
+  transition: all .5s;
+  border-radius: 50%;
+  width: 50px;
+  height: 50px;
+  place-content: center;
 }
 
-footer{
-    grid-area: content;
-    height: 100px;
-    width: 100%;
-    place-self: end center;
-    background-color: #0005;
+#link-topo:hover{
+    background-color: var(--primary-color);
 }
