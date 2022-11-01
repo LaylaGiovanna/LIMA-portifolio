@@ -37,3 +37,24 @@
 .card:hover::before{
     transform: translateY(0%);
 }
+
+@media (max-width:960px) {
+    .projetos .section-title {
+        font-size: 120px;
+    }
+
+    .projetos{
+        display: flex;
+        flex-direction: column;
+    }
+
+    .projetos .card-container{
+        width: 80%;
+        height: auto;
+        display: flex;
+        /* flex-wrap: wrap; */
+        justify-content: center;
+        gap: 34px;
+        padding: var(--padding-responsive);
+    }
+}

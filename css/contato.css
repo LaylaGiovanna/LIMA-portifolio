@@ -70,3 +70,13 @@ footer {
     border-top: 2px solid #fff;
     font-size: 1rem;
   }
+
+@media (max-width:960px) {
+    .contato{
+       
+    }
+
+    footer{
+       
+    }
+}
