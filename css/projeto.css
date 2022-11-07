@@ -1,60 +1,60 @@
-.projetos{
-    width: 100%;
+.projetos {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 26px;
+}
+
+.card-container {
+  max-width: 1200px;
+  width: 100%;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  gap: 48px;
+}
+
+.card {
+  display: block;
+  position: relative;
+  overflow: hidden;
+}
+
+.card::before {
+  content: "Clique aqui para ver o projeto";
+  background-color: #0005;
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  display: grid;
+  place-content: center;
+  font-weight: 700;
+  transform: translateY(100%);
+  transition: transform 0.5s;
+}
+
+.card:hover::before {
+  transform: translateY(0%);
+}
+
+@media (max-width: 960px) {
+  .projetos .section-title {
+    font-size: 120px;
+  }
+  .skills{
+      width: 80%;
+  }
+  .projetos{
+      height: auto;
+  }
+
+  .card-container {
+    height: auto;
     display: flex;
-    flex-direction: column;
     align-items: center;
-    gap: 26px;
-}
-
-.card-container{
-    max-width: 1200px;
-    width: 100%;
-    display: flex;
+    flex-direction: column;
     flex-wrap: wrap;
-    justify-content: space-between;
-    gap: 48px;
-}
-
-.card{
-    display: block;
-    position: relative;
-    overflow: hidden;
-}
-
-.card::before{
-    content: "Clique aqui para ver o projeto";
-    background-color: #0005;
-    width: 100%;
-    height: 100%;
-    position: absolute;
-    display: grid;
-    place-content: center;
-    font-weight: 700;
-    transform: translateY(100%);
-    transition: transform .5s;
-}
-
-.card:hover::before{
-    transform: translateY(0%);
-}
-
-@media (max-width:960px) {
-    .projetos .section-title {
-        font-size: 120px;
-    }
-
-    .projetos{
-        display: flex;
-        flex-direction: column;
-    }
-
-    .projetos .card-container{
-        width: 80%;
-        height: auto;
-        display: flex;
-        /* flex-wrap: wrap; */
-        justify-content: center;
-        gap: 34px;
-        padding: var(--padding-responsive);
-    }
+    padding: var(--padding-responsive);
+  }
 }

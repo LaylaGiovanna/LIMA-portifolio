@@ -85,10 +85,10 @@
       "title"
       "description"
       "skills";
-    grid-template-rows: auto 1fr 1fr;
     grid-template-columns: 1fr;
     gap: 64px;
     padding-bottom: 44px;
+    justify-content: center;
   }
 
   .section-title {

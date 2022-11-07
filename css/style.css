@@ -65,20 +65,17 @@ section {
 
 /* TABLET */
 @media (max-width: 960px) {
-   header {
+  header {
     width: 80%;
   }
   header .menu {
     display: none;
   }
-  /*
-  
-  } */
- }
+}
 
 /* MOBILE */
- @media (max-width: 640px) {
+@media (max-width: 640px) {
   header .menu {
     display: none;
   }
-} 
+}
