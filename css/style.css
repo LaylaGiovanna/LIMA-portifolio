@@ -71,6 +71,11 @@ section {
   header .menu {
     display: none;
   }
+  .icon-menu{
+    display: inline;
+    font-size: 1.75rem;
+    color: var(--primary-color);
+  }
 }
 
 /* MOBILE */

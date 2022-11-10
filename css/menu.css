@@ -3,6 +3,9 @@
     gap: 72px;
     font-size: 1.25rem;
 }
+.icon-menu{
+    display: none;
+}
 
 .menu li{
     border-bottom: 4px solid transparent;

@@ -71,21 +71,33 @@ footer {
 
 @media (max-width: 960px) {
   .contato {
-    width: 80%;
+    width: 90%;
     height: auto;
     display: flex;
     flex-direction: column;
+    gap: 48px;
+    padding: var(--padding-responsive);
   }
+
 
   .contato-container{
     display: flex;
     align-items: center;
+    transform: translateY(-10%);
   }
+  .social-container{
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+    transform: translateY(-10%);
+    padding-top: 24px;
+  }
+
   .links-container {
     display: flex;
     align-items: center;
-    background-color: tomato;
+    transform: translate(1%, -20%);
+    padding: var(--padding-responsive);
   }
 
-  
 }
