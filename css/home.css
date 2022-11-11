@@ -25,11 +25,26 @@
   color: var(--primary-color);
 }
 
-@media (max-width: 960px){
+@media (max-width: 960px) {
   .profile {
     display: flex;
     flex-direction: column;
     font-size: 2.25rem;
     align-items: center;
+  }
+}
+
+@media (max-width: 640px) {
+  .profile {
+    display: flex;
+    flex-direction: column;
+    font-size: 1rem;
+    transform: translateY(10%);
+  }
+  .profile__text {
+    font-size: 1.25rem;
+  }
+  .profile__name {
+    font-size: 1.5rem;
   }
 }

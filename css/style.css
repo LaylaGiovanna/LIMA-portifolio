@@ -80,6 +80,9 @@ section {
 
 /* MOBILE */
 @media (max-width: 640px) {
+  header{
+    width: 80%;
+  }
   header .menu {
     display: none;
   }
